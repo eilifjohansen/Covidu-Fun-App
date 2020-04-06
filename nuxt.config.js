@@ -35,6 +35,8 @@ export default {
   auth: {
     redirect: {
       login: "/", // redirect user when not connected
+      logout:
+        "https://inklud.eu.auth0.com/v2/logout?returnTo=https://app.covidu.com&client_id=eEymJzS3Dmn9nnEhqhD0woAgyE6NLCbS",
       callback: "/auth/signed-in"
     },
     strategies: {
