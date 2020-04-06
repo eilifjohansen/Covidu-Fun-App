@@ -1,6 +1,5 @@
 <template>
   <div>
-    <super-secret-div v-if="$auth.loggedIn"/>
     <div class="content">
       <h1>Hei, {{ $auth.loggedIn ? $auth.user.email : 'friend' }}!</h1>
       <p v-if="$auth.loggedIn">Now try going to our

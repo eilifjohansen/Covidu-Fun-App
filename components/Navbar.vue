@@ -2,7 +2,6 @@
   <div class="header">
     <nuxt-link to="/" exact>Home</nuxt-link>
     <nuxt-link to="/about">About</nuxt-link>
-    <nuxt-link v-if="$auth.loggedIn" to="/secret">Top Secret</nuxt-link>
     <a v-if="$auth.loggedIn" @click="$auth.logout()">Sign Off</a>
     <a v-else @click="$auth.loginWith('auth0')">Sign In</a>
   </div>
