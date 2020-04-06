@@ -4,7 +4,7 @@
     <nuxt-link to="/about">About</nuxt-link>
     <nuxt-link v-if="$auth.loggedIn" to="/secret">Top Secret</nuxt-link>
     <a
-      href="https://inklud.eu.auth0.com/v2/logout?returnTo=https://app.covidu.com&client_id=eEymJzS3Dmn9nnEhqhD0woAgyE6NLCbS"
+      href="https://inklud.eu.auth0.com/v2/logout?client_id=eEymJzS3Dmn9nnEhqhD0woAgyE6NLCbS"
       v-if="$auth.loggedIn"
       @click="$auth.logout()"
     >Sign Off</a>
