@@ -7,7 +7,7 @@
         <nuxt-link to="/secret" class="link">super secret page</nuxt-link>!
       </p>
       <p v-else>
-        So, Maybe you want to
+        So, maybe you want to
         <a @click="$auth.login()" class="link">sign in</a> and see what happens?
       </p>
     </div>
